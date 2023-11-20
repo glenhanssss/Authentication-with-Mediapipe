@@ -59,9 +59,9 @@ def determine_face_direction(left_eye, right_eye, nose):
     # untuk mendeteksi arah hadap kasar seperti "forward", "looking right", "looking left", dll.
     if right_eye[0] < nose[0] < left_eye[0]:
         return "Depan"
-    elif nose[0] < right_eye[0]:
-        return "Kanan"
     elif nose[0] > left_eye[0]:
+        return "Kanan"
+    elif nose[0] < right_eye[0]:
         return "Kiri"
     else:
         return "Undetermined"
