@@ -90,6 +90,9 @@ def main():
         image = Image.open(uploaded_image)
         # st.image(image, caption="Uploaded Image - Depan", use_column_width=True)
 
+        # flip image
+        image = np.fliplr(image)
+
         # Memproses deteksi arah hadap wajah
         result_image, direction_label, confidence = detect_face_direction(image)
 
@@ -109,6 +112,9 @@ def main():
                 image = Image.open(uploaded_image)
                 # st.image(image, caption="Uploaded Image - Kanan", use_column_width=True)
 
+                # flip image
+                image = np.fliplr(image)
+
                 # Memproses deteksi arah hadap wajah
                 result_image, direction_label, confidence = detect_face_direction(image)
 
@@ -127,6 +133,9 @@ def main():
                     if uploaded_image is not None:
                         image = Image.open(uploaded_image)
                         # st.image(image, caption="Uploaded Image - Kiri", use_column_width=True)
+
+                        # flip image
+                        image = np.fliplr(image)
 
                         # Memproses deteksi arah hadap wajah
                         result_image, direction_label, confidence = detect_face_direction(image)
