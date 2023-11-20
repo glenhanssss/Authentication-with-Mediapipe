@@ -97,7 +97,7 @@ def main():
         st.image(result_image, caption="Face Detection Result", use_column_width=True)
         
         # cek autentikasi arah depan
-        if direction_label == "Depan" and confidence > 0.8:
+        if direction_label == "Depan" and confidence > 0.7:
             st.success("Autentikasi Pertama berhasil👌")
             
             # autentikasi arah kanan
@@ -116,7 +116,7 @@ def main():
                 st.image(result_image, caption="Face Detection Result", use_column_width=True)
 
                 # cek autentikasi arah kanan
-                if direction_label == "Kanan" and confidence > 0.8:
+                if direction_label == "Kanan" and confidence > 0.7:
                     st.success("Autentikasi Kedua berhasil👍")
                     
                     # autentikasi arah kiri
@@ -135,7 +135,7 @@ def main():
                         st.image(result_image, caption="Face Detection Result", use_column_width=True)
 
                         # cek autentikasi arah kiri
-                        if direction_label == "Kiri" and confidence > 0.8:
+                        if direction_label == "Kiri" and confidence > 0.7:
                             st.success("Autentikasi Selesaiiii 😁")
                             st.balloons()
                             # setelah semua autentikasi brehasil, akan langsung redirect masuk ke sistem
