@@ -146,11 +146,11 @@ def main():
                                 st.image(image, use_column_width=True)
                                 st.markdown("<h4 style='color: red;'> Perlu diperhatikan bahwa Developer dari proyek ini mempunyai maksud untuk menawarkan Algoritma/Fitur Autentikasi multi faktor yang berbeda dari autentikasi-autentikasi sebelumnya, sehingga aplikasi memang dibuat sedemikian rupa agar menjadi sederhana. Sangat dimungkinkan jika fitur MFA ini kedepannya ingin dikembangkan tidak hanya berdasarkan pengenalan Wajah, tetapi pengenalan lain juga seperti suara, landmark wajah, dan lainnya. </h4>", unsafe_allow_html=True)
                         else:
-                            st.warning("Autentikasi Kiri Gagal😑 Foto harus menghadap Kiri dan akurasi harus di atas 80%. Ulangi Capture Gambar")
+                            st.warning("Autentikasi Kiri Gagal😑 Foto harus menghadap Kiri dan akurasi harus di atas 70%. Ulangi Capture Gambar")
                 else:
-                    st.warning("Autentikasi Kedua Gagal😢 Foto harus menghadap Kanan dan akurasi harus di atas 80%. Ulangi Capture Gambar")
+                    st.warning("Autentikasi Kedua Gagal😢 Foto harus menghadap Kanan dan akurasi harus di atas 70%. Ulangi Capture Gambar")
         else:
-            st.warning("Autentikasi Pertama Gagal😒 Foto harus menghadap Depan dan akurasi harus di atas 80%. Ulangi Capture Gambar")
+            st.warning("Autentikasi Pertama Gagal😒 Foto harus menghadap Depan dan akurasi harus di atas 70%. Ulangi Capture Gambar")
 
 if __name__ == "__main__":
     main()
