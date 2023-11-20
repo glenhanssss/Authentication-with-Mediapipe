@@ -58,5 +58,6 @@ urllib3==2.1.0
 validators==0.22.0
 watchdog==3.0.0
 zipp==3.17.0
-opencv-contrib-python-headless
+opencv_python_headless==4.6.0.66
 streamlit_webrtc==0.20.0
+ffmpeg==1.4
